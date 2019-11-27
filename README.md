@@ -13,3 +13,16 @@ An android app framework which which help its user to find P.G. rooms in their l
 1. Splash Screen
 
 ![](https://github.com/panchamsheoran77/EzeePg_Android/blob/master/snaps/splash.png "Splash Screen")
+
+2. Home Screen 
+
+![](https://github.com/panchamsheoran77/EzeePg_Android/blob/master/snaps/home.png "Home Screen")
+
+3. Navigation Screen Embedded Sorted Results and filter Categories 
+
+![](https://github.com/panchamsheoran77/EzeePg_Android/blob/master/snaps/filtered.png "Navigation Screen")
+
+4. P.G. Infromation Screen : 
+
+![](https://github.com/panchamsheoran77/EzeePg_Android/blob/master/snaps/pgInfo.png "PG Info Screen")
+
