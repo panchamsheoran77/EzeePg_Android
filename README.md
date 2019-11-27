@@ -10,4 +10,6 @@ An android app framework which which help its user to find P.G. rooms in their l
 5. It takes Google firebase firestore as it's backend Database which makes app highly optimised.
 
 # UI SnapShots : 
-![alt text](https://raw.githubusercontent.com/panchamsheoran77/EzeePg_Android/master/snap/splash.png)
+1. Splash Screen
+
+![](https://github.com/panchamsheoran77/EzeePg_Android/blob/master/snaps/splash.png "Splash Screen")
