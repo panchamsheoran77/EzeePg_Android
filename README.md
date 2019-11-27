@@ -27,4 +27,4 @@ An android app framework which which help its user to find P.G. rooms in their l
 ![](https://github.com/panchamsheoran77/EzeePg_Android/blob/master/snaps/pgInfo.png "PG Info Screen")
 
 # App apk link :
- !["Ezee Pg Apk"](https://github.com/panchamsheoran77/EzeePg_Android/blob/master/app/release/app-release.apk)
+ !["Ezee Pg Apk"](https://github.com/panchamsheoran77/EzeePg_Android/blob/master/app/release/app-release.apk "Ezee Pg Apk")
