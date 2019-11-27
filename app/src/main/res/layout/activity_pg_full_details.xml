@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_full"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/action">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            ><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:id="@+id/pg_name_details"
+                android:text="EZEE PG"
+                android:textAlignment="center"
+                android:background="@drawable/border"
+                />
+            <RatingBar
+                android:id="@+id/pgRatingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                android:max="5" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pgAddress"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:drawableStart="@drawable/ic_location_on_black_24dp" />
+
+        </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/action">
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/pg_image_container"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="2dp"
+    android:elevation="10dp"
+    />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/pgRoomType_full"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:textStyle="bold"
+    android:textSize="15sp"
+    android:textColor="#9932CC"
+    android:text="Single  / Double / Tripe"
+    android:padding="10dp"
+    android:background="@drawable/smll_border"
+    />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/pgType_full"
+    android:layout_marginLeft="15dp"
+    android:layout_marginStart="15dp"
+    android:textStyle="bold"
+    android:textSize="15sp"
+    android:textColor="#40E0D0"
+    android:text="Boys"
+    android:padding="10dp"
+    android:background="@drawable/smll_border1"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pgPrice_full"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#FF6347"
+        android:text="8000/per month"
+        android:padding="10dp"
+        android:background="@drawable/smll_border2"
+        />
+</LinearLayout>
+        </HorizontalScrollView>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            >
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:elevation="10dp"
+            >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_wifi_black_24dp"
+            android:text="Free Wifi"
+            android:id="@+id/pgWifi"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+
+          <TextView
+              android:id="@+id/pgCctv"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="10dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginEnd="10dp"
+              android:layout_marginRight="10dp"
+              android:drawableTop="@drawable/ic_visibility_black_24dp"
+              android:text="CCTV" />
+
+          <TextView
+              android:id="@+id/pgMeals"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="10dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginEnd="10dp"
+              android:layout_marginRight="10dp"
+              android:drawableTop="@drawable/ic_local_dining_black_24dp"
+              android:text="4 Meals" />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:drawableTop="@drawable/ic_local_drink_black_24dp"
+              android:text="Ro Water"
+              android:id="@+id/pgRo"
+              android:layout_marginRight="10dp"
+              android:layout_marginEnd="10dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginStart="10dp" />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:drawableTop="@drawable/ic_card_membership_black_24dp"
+              android:text="Ac&amp; Non-Ac"
+              android:id="@+id/pgAcNonAc"
+              android:layout_marginRight="10dp"
+              android:layout_marginEnd="10dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginStart="10dp" />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:drawableTop="@drawable/ic_nature_people_black_24dp"
+              android:text="Near Campus"
+              android:id="@+id/pgNear"
+              android:layout_marginRight="10dp"
+              android:layout_marginEnd="10dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginStart="10dp" />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:drawableTop="@drawable/ic_local_cafe_black_24dp"
+              android:text="Tea &amp; Coffee"
+              android:id="@+id/pgTea"
+              android:layout_marginRight="10dp"
+              android:layout_marginEnd="10dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginStart="10dp" />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:drawableTop="@drawable/lift"
+              android:text="Lift"
+              android:id="@+id/pgLift"
+              android:layout_marginRight="10dp"
+              android:layout_marginEnd="10dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginStart="10dp" />
+      </LinearLayout>
+        </android.support.v7.widget.CardView>
+  </HorizontalScrollView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="10dp"
+        android:elevation="10dp"
+        android:id="@+id/cardview_facility_up"
+           app:cardCornerRadius="30dp"
+        android:layout_margin="20dp"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pg_facility_linear"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:id="@+id/text"
+        android:textStyle="bold"
+        android:text="Other Faclities : "
+        android:layout_marginStart="15dp" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pg_faclities_container"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/text"
+        android:layout_marginStart="20dp" />
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+<android.support.design.widget.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="popup"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:src="@drawable/ic_contact_phone_black_24dp"
+    android:layout_margin="20.5dp"
+    android:layout_alignParentEnd="true" />
+</RelativeLayout>

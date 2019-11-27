@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="260dp"
+    android:layout_width="match_parent">
+<FrameLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:id="@+id/view_background"
+    android:background="#ff2519"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete_white_24dp"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginTop="8dp"
+        app:cardElevation="5dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#F8F8FF"
+        >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+               >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/pg_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Krishna Boys Hostel"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                    <RatingBar
+                        android:id="@+id/pgRatingBar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="5dp"
+                        android:background="@android:color/transparent"
+                        android:max="5"/>
+                     <TextView
+                         android:id="@+id/pg_price"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="3dp"
+                         android:text="₹8000"
+                         android:layout_alignParentRight="true"
+                         android:textColor="#FF6347"
+                         android:textSize="20sp"
+                         android:textStyle="bold"
+                         android:layout_alignParentEnd="true"/>
+             </RelativeLayout>
+                     <TextView
+                         android:id="@+id/pg_room_type"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="5dp"
+                         android:layout_gravity="center"
+                         android:text="Room Type : Single/Double/Triple"
+                         android:textColor="#087E4E"
+                         android:textStyle="bold"
+                         android:textSize="17sp" />
+
+                     <TextView
+                         android:id="@+id/pgType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Pg Type : Girls  Pg "
+                        android:textColor="#9932CC"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

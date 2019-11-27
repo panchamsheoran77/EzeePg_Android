@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/contactus_background"
+    >
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  android:layout_marginLeft="28dp"
+    app:cardCornerRadius="25dp"
+    android:elevation="8dp"
+    app:cardElevation="10dp"
+    android:layout_centerInParent="true"
+    android:layout_marginStart="28dp">
+<LinearLayout
+    android:layout_width="match_parent"
+   android:layout_height="match_parent"
+    android:id="@+id/popup_element"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_person_name"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="EZEE PG"
+        android:fontFamily="@font/exan_regular"
+        android:layout_margin="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_person_number"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="8109716921"
+        android:layout_marginLeft="20dp"
+        />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:fontFamily="@font/exan_regular"
+        android:text="Spark Studios"
+        android:layout_marginBottom="10dp"
+        />
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="DIAL"
+    android:textSize="15sp"
+    android:textStyle="bold"
+    android:id="@+id/openDiler"
+    android:background="@drawable/dial_button_back"
+    />
+</LinearLayout></android.support.v7.widget.CardView></RelativeLayout>

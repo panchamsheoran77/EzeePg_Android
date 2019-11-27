@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splash_screen"
+    android:background="@drawable/splash_scrren_background"
+    >
+
+<ImageView
+    android:id="@+id/app_splash"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:src="@drawable/logo_splash"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="90dp"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Co-powered by : Spark Studios"
+        android:fontFamily="@font/exan_regular"
+        android:textStyle="bold"
+        android:layout_below="@id/spark_logo"
+        android:textSize="19.5sp"
+        android:textColor="#fff"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/text_pwoered"
+        android:layout_marginStart="25dp" />
+    <ImageView
+        android:id="@+id/spark_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/app_splash"
+        android:src="@drawable/logo"
+        />
+</RelativeLayout>
